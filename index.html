@@ -177,6 +177,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"
       crossorigin="anonymous"></script>
+
+        <script>
+        // Desactivar el menú contextual sobre el video
+        document.getElementById('video').addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Permitir la interacción con los controles del video
+        document.getElementById('video').style.pointerEvents = 'auto';
+    </script>
+
+      
   </body>
 
 </html>
